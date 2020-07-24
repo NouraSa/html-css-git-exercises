@@ -34,9 +34,32 @@ button {
 	/*  Challenge: can you make the navigation links orange on hover? */
 }
 
+.navbar-nav a:hover {
+	background-color: rgba(218, 103, 61, 0.945);
+	border-radius: 5px;
+}
+
 /* Buttons */
 /* INSERT BUTTON STYLES HERE */
+.jumbotron button {
+	border-radius: 0%;
+	border-color: transparent;
+}
 
+.button1 {
+	background-color: rgb(192, 65, 19);
+}
+
+.button2 {
+	color: black;
+	background-color: white;
+}
+
+.navigation__content button {
+	background-color: rgba(216, 93, 48, 0.945);
+	border-color: transparent;
+	border-radius: 4px;
+}
 
 /* Alert */
 .alert {
@@ -65,7 +88,38 @@ button {
 
 /* Jumbotron */
 .jumbotron {
-	border-radius: 0;
+	position: relative;
+	background-image: url(../images/header-bike.jpg);
+	opacity: 0.8;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	color: white;
+	font-weight: bold;
+	height: 380px;
+}
+
+.jumbotron h1 {
+	color: white;
+	font-size: 62px;
+}
+
+.jumbotron p {
+	border-bottom: 1px solid white;
+}
+
+.under_boxes .article {
+	border: solid rgba(104, 102, 102, 0.281);
+	border-width: thin;
+	height: 250px;
+	width: 45%;
+	float: left;
+	padding: 18px;
+	margin: 15px;
+}
+
+#left_box {
+	background-color: rgb(238, 238, 238);
 }
 
 /* Headings */
@@ -117,7 +171,49 @@ button {
 }
 
 .article__read-more:last-child {
-	margin-bottom: 0;
+	margin-bottom: 0; 
+}
+
+	/*side boxes*/
+.sidebar .article {
+font-size: 0.85em;
+text-align: initial;
+width: 100%;
+padding-bottom: 30px;
+margin-bottom: 67px;
+margin-top: 10px;
+}
+
+.sidebar .article .article__title {
+	position: relative;
+	text-align: left;
+	display: block;
+	font-size: 13px;
+	width: 200px;
+	right: 10px;
+	float: right;
+	height: 28px;
+	padding-bottom: 2px;
+	
+}
+.sidebar .article p {
+	position: relative; 
+	text-align: left;
+	display: block;
+	float: right;
+	height: 80px;
+	width: 200px;
+	right: 10px;
+	margin-bottom: 12px;
+	padding-top: 3px;
+}	 
+
+.sidebar .article img {
+float: left;
+height: 18%;
+width: 38%;
+margin-right: 6px;
+padding-top: 7px;
 }
 
 /* Footer */
@@ -136,6 +232,6 @@ button {
 @media screen and (min-width: 992px) {
 
 	.navbar-brand > img {
-	   max-height: 80px;
+	max-height: 80px;
 	}
 }

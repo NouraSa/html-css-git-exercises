@@ -120,9 +120,10 @@ footer a{
 }
 
     /********* Lines*****/ 
-    .lines {
+.lines {
     width: 90%;
     border-style: solid; 
     border-color: #80CBC4; 
     border-radius: 100px;
 }
+

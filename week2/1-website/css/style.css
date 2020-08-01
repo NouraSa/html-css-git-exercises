@@ -4,6 +4,95 @@
 
 /**
  * Add your custom styles below
+
+/********* Navigation Bar *************/
+.navWrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 2rem;
+}
+.navWrapper img {
+    width: 40px; 
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: space-around;
+    width: 900px;
+    margin-top: 35px;
+    margin-right: 40px;
+    list-style: none;
+}
+nav ul a {
+    text-decoration: none;
+    color: grey;
+}
+/************ Main ********************/
+main {
+    background-image: url(/week2/1-website/img/first-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+    color: cornsilk;
+    text-align: center;
+}
+
+.mainContent {
+    padding: 200px;
+}
+main h1 {
+    font-size: 3rem;
+}
+
+main a {
+    text-decoration: none;
+    color: cornsilk;
+}
+
+main button {
+    background-color: orange;
+    padding: 15px 42px;
+    border-radius: 14px;
+    border: none;
+}
+
+
+/**************** Section 2************/
+
+.partTwo { 
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 80vhvh;
+}
+
+.partTwo section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+img {
+    height: 130px;
+    width: 8rem;
+}
+
+/************** Hr and Footer***************/
+
+
+
+
+
+
+
+
+
+
+
  * 
  * Remember: 
  * - Be organised, use comments and separate your styles into meaningful chunks

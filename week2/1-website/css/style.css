@@ -6,41 +6,39 @@
  * Add your custom styles below
 
 /********* Navigation Bar *************/
-.navWrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    height: 4rem;
-}
-.navWrapper img {
-    width: 40px; 
+.nav img {
+    position: sticky; 
     height: 40px;
+    width: 40px;
+    float: left;
     margin-top: 10px;
-    margin-left: 300px;
 }
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    width: 500px;
-    margin-top: 35px;
-    margin-right: 300px;
-    list-style: none;
+.nav {
+    height: 75px;
+    text-align: center;
 }
-nav ul a {
+.menu a {
+    display: inline-block;
+    color: grey;
     text-decoration: none;
-    color: grey;font-size: 1rem;
+    margin: 15px;
+    margin-top: 25px;
 }
-
-nav ul a:hover {
-    text-decoration: none;
-    color: rgb(65, 63, 63);
+.menu a:first-child {
     font-weight: bold;
 }
-
-#firstLink {
-    font-weight: bold;
+label {
+    margin: 0 40px 0 0 ; 
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
 }
+#toggle {
+    display: none;
+}
+
 /************ Main ********************/
 main {
     background-image: url(/week2/1-website/img/first-background.jpg);
@@ -52,7 +50,6 @@ main {
     text-align: center;
     margin-top: 5px;
 }
-
 .mainContent {
     padding: 200px;
 }
@@ -60,21 +57,17 @@ main {
     font-size: 3rem;
     font-family: 'Montserrat', sans-serif;
 font-family: 'Nunito', sans-serif;
-
 }
-
 main a {
     text-decoration: none;
     color: cornsilk;
 }
-
 main button {
     background-color: #FF5722;
     padding: 15px 42px;
     border-radius: 14px;
     border: none;
 }
-
 
 /**************** Section 2************/
 
@@ -83,7 +76,6 @@ main button {
     justify-content: space-evenly;
     min-width: 80vhvh;
     margin-bottom: 100px;
-
 }
 
 .partTwo section {
@@ -96,7 +88,6 @@ img {
     height: 130px;
     width: 8rem;
 }
-
 h2 {
     text-align: center; 
     margin-bottom: 60px;  
@@ -105,7 +96,6 @@ h2 {
     font-weight: lighter; 
 }
 /************** Hr and Footer***************/
-
 hr {
     border-top: solid #BDBDBD;
     border-width:1px;
@@ -138,11 +128,10 @@ footer li {
     padding: 10px;
     width: 20px;
     height: 20px;
-    color: blue;
+    color: #5DADE2;
     border: 1px solid #BDBDBD;
     border-radius: 50%;
 }
-
 #copyrights {
     margin-top: 5px;
     margin-bottom: 50px;
@@ -150,98 +139,108 @@ footer li {
     font-weight: 800;
 }
 
-/*****Media Queries*****/cc
-
-@media  screen and (max-width: 380px) {
-
-    nav img {
-        width: 15px
-    }
-    .navWrapper {
-        height: 50px;
-        width: 500px;
-        padding: 70px
-    }
-}
-
-@media  screen and (max-width: 380px) {
-    nav ul {
-    }
+/*****Media Queries*****/
+@media only screen and (max-width: 360px) 
+{
     
-}
-
-@media  screen and (max-width: 380px) {
-main  {
-    background-image: url(/week2/1-website/img/resizedfirst-background.jpg);
-    background-size: 600px 456px;
-    margin-left: 5px;
+    .nav {
+        position: relative;
+    } 
+    label {
+        display: block;
+        cursor: pointer;
     }
-
-.mainContent {
-    width: 110px;
-    height: 440px;
+    .menu {
+        text-align: left;
+        display: none;
+        padding: 4px;
+        height: 400px;
+        margin-left: 95px;
+    }
+    .menu a {
+        display: block;
+        text-align: center;
+        width: 100px;
+        margin-top: 20px;
+        height: 15px;
+        text-decoration: none;
+        color: rgb(65, 63, 63);
+        font-size: 16px;
+    } 
+    .menu a:hover {
+        color: #FF5722;
+    }
+        .menu a:first-child {
+        font-weight: bold;
+    }
+    #toggle:checked + .menu {
+    display: block; 
+    }
+}
+@media  screen and (max-width:360px) 
+{
+    main  {
+        background-image: url(/week2/1-website/img/resizedfirst-background.jpg);
+        background-size: 600px 456px;
+        }
+    .mainContent {
+        width: 110px;
+        height: 440px;
+        position: relative;
+        right: 140px;
+        margin-bottom: 3px;
+        padding-bottom: 1px;
+        }
+    .mainContent h1 {
+        font-size: 25px;
+        width: 300px;
+        position: relative;
+        right: 90px;
+        }
+    main p {
+        font-size: 14px;
+        text-align: center;
+        width: 150px;
+        position: relative;
+        right: 20px;
+        margin-bottom: 50px ;
+        }
+    main button {
+        position: relative;
+        margin-right: 120px;
+        padding: 0;
+        width: 110px;
+        height: 35px;
+        }
+    .partTwo { 
+    height: 500px;
     position: relative;
-    right: 140px;
-    margin-bottom: 3px;
-    padding-bottom: 1px;
-}
-.mainContent h1 {
-    font-size: 25px;
-    width: 300px;
-    position: relative;
-    right: 90px;
-}
-
-main p {
-    font-size: 14px;
-    text-align: center;
-    width: 150px;
-    position: relative;
-    right: 20px;
-    margin-bottom: 50px ;
-}
-
-main button {
-    position: relative;
-    margin-right: 120px;
-    padding: 0;
-    width: 110px;
-    height: 35px;
-}
-
-.partTwo { 
-height: 500px;
-position: relative;
-display: flex;
-flex-direction: column;
-justify-content: center;
-margin-top: 5px;
-padding: 3px;
-}
-
-h2 {
-    font-size: 20px;
-    position: relative;
-    left: 35px;
-}
-
-footer {
-    height: 4rem;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    margin-right: 65px;
+    justify-content: center;
+    margin-top: 5px;
+    padding: 3px;
+        }
+    h2 {
+        font-size: 20px;
+        position: relative;
+        left: 12px;
+        }
+    footer {
+        height: 4rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-right: 65px;
+        }
 }
 
-
-}
-
- * 
+/*
  * Remember: 
  * - Be organised, use comments and separate your styles into meaningful chunks
  *    for example: General styles, Navigation styles, Hero styles, Footer etc.
  * 
- * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'
- */
+ * - When using Flexbox, remember the items you want to move around need to be inside a parent container set to 'display: flex'*/
+
 
 
